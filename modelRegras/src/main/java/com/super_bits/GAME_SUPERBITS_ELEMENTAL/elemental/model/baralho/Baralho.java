@@ -3,19 +3,22 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.super_bits.GAME_SUPERBITS_ELEMENTAL.elemental.model.carta;
+package com.super_bits.GAME_SUPERBITS_ELEMENTAL.elemental.model.baralho;
+
+import com.super_bits.GAME_SUPERBITS_ELEMENTAL.elemental.model.carta.Carta;
+import java.util.List;
 
 /**
  *
  * @author cristopher
  */
-public class ModoCartaMesa {
+public class Baralho {
 
     private int id;
 
     private String nome;
 
-    private String descricao;
+    private List<Carta> cartasBaralho;
 
     public int getId() {
         return id;
@@ -33,12 +36,12 @@ public class ModoCartaMesa {
         this.nome = nome;
     }
 
-    public String getDescricao() {
-        return descricao;
+    public List<Carta> getCartasBaralho() {
+        return cartasBaralho;
     }
 
-    public void setDescricao(String descricao) {
-        this.descricao = descricao;
+    public void setCartasBaralho(List<Carta> cartasBaralho) {
+        this.cartasBaralho = cartasBaralho;
     }
 
 }

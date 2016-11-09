@@ -15,7 +15,7 @@ public class CartaMesa {
 
     private Carta carta;
 
-    private ModoCartaMesa modoCarta;
+    private PosicaoCartaMesa modoCarta;
 
     private int rodadasNaMesa;
 
@@ -35,11 +35,11 @@ public class CartaMesa {
         this.carta = carta;
     }
 
-    public ModoCartaMesa getModoCarta() {
+    public PosicaoCartaMesa getModoCarta() {
         return modoCarta;
     }
 
-    public void setModoCarta(ModoCartaMesa modoCarta) {
+    public void setModoCarta(PosicaoCartaMesa modoCarta) {
         this.modoCarta = modoCarta;
     }
 

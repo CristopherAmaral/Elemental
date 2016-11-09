@@ -5,6 +5,9 @@
  */
 package com.super_bits.GAME_SUPERBITS_ELEMENTAL.elemental.model.usuario;
 
+import com.super_bits.GAME_SUPERBITS_ELEMENTAL.elemental.model.baralho.Baralho;
+import java.util.List;
+
 /**
  *
  * @author cristopher
@@ -16,6 +19,8 @@ public class Usuario {
     private String email;
 
     private String nome;
+
+    private List<Baralho> baralhos;
 
     public int getId() {
         return id;
@@ -39,6 +44,14 @@ public class Usuario {
 
     public void setNome(String nome) {
         this.nome = nome;
+    }
+
+    public List<Baralho> getBaralhos() {
+        return baralhos;
+    }
+
+    public void setBaralhos(List<Baralho> baralhos) {
+        this.baralhos = baralhos;
     }
 
 }

@@ -5,6 +5,7 @@
  */
 package com.super_bits.GAME_SUPERBITS_ELEMENTAL.elemental.model.jogador;
 
+import com.super_bits.GAME_SUPERBITS_ELEMENTAL.elemental.model.baralho.Baralho;
 import com.super_bits.GAME_SUPERBITS_ELEMENTAL.elemental.model.carta.Carta;
 import com.super_bits.GAME_SUPERBITS_ELEMENTAL.elemental.model.carta.CartaMesa;
 import com.super_bits.GAME_SUPERBITS_ELEMENTAL.elemental.model.usuario.Usuario;
@@ -28,11 +29,15 @@ public class Jogador {
 
     private Usuario usuario;
 
-    private List<Carta> baralho;
-
     private List<Carta> mao;
 
     private List<CartaMesa> cartasMesa;
+
+    private Baralho baralhoPartida;
+
+    private Carta cartaAcao;
+
+    private int qtdTurno;
 
     public int getId() {
         return id;
@@ -58,14 +63,6 @@ public class Jogador {
         this.usuario = usuario;
     }
 
-    public List<Carta> getBaralho() {
-        return baralho;
-    }
-
-    public void setBaralho(List<Carta> baralho) {
-        this.baralho = baralho;
-    }
-
     public List<Carta> getMao() {
         return mao;
     }
@@ -80,6 +77,34 @@ public class Jogador {
 
     public void setCartasMesa(List<CartaMesa> cartasMesa) {
         this.cartasMesa = cartasMesa;
+    }
+
+    public Baralho getBaralhoPartida() {
+        return baralhoPartida;
+    }
+
+    public void setBaralhoPartida(Baralho baralhoPartida) {
+        this.baralhoPartida = baralhoPartida;
+    }
+
+    public void finalizarJogada() {
+
+    }
+
+    public int getQtdTurno() {
+        return qtdTurno;
+    }
+
+    public void incrementarQtdTurnos() {
+        qtdTurno++;
+    }
+
+    public Carta getCartaAcao() {
+        return cartaAcao;
+    }
+
+    public void setCartaAcao(Carta cartaAcao) {
+        this.cartaAcao = cartaAcao;
     }
 
 }

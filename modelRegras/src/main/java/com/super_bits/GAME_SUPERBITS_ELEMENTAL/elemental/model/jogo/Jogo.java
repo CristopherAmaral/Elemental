@@ -5,8 +5,11 @@
  */
 package com.super_bits.GAME_SUPERBITS_ELEMENTAL.elemental.model.jogo;
 
+import com.super_bits.GAME_SUPERBITS_ELEMENTAL.elemental.model.baralho.Baralho;
+import com.super_bits.GAME_SUPERBITS_ELEMENTAL.elemental.model.carta.Carta;
 import com.super_bits.GAME_SUPERBITS_ELEMENTAL.elemental.model.jogador.Jogador;
 import com.super_bits.GAME_SUPERBITS_ELEMENTAL.elemental.model.usuario.Usuario;
+import java.util.List;
 
 /**
  *
@@ -26,9 +29,15 @@ public class Jogo {
 
     private Jogador jogador2;
 
-    private Jogador jogadorAtual;
+    private Turno turnoAtual;
 
-    private int turno;
+    private Acao acaoSelecionada;
+
+    private TipoAlvo tipoAlvo;
+
+    private Carta cartaAlvo;
+
+    private List<Turno> turnosRealizados;
 
     public int getId() {
         return id;
@@ -54,24 +63,77 @@ public class Jogo {
         this.jogador2 = jogador2;
     }
 
-    public Jogador getJogadorAtual() {
-        return jogadorAtual;
-    }
-
-    public void setJogadorAtual(Jogador jogadorAtual) {
-        this.jogadorAtual = jogadorAtual;
-    }
-
-    public int getTurno() {
-        return turno;
-    }
-
-    public void setTurno(int turno) {
-        this.turno = turno;
-    }
-
     public void iniciarJogo() {
 
+    }
+
+    public void embaralharBaralho(Baralho pBaralho) {
+
+    }
+
+    public void iniciarPartida() {
+
+        if (jogador1 == null || jogador2 == null) {
+
+            throw new UnsupportedOperationException("FALTAM JOGADORES PARA INCIAR A PARTIDA! ");
+
+        }
+
+        getJogador1().setVida(100);
+
+        getJogador2().setVida(100);
+
+        // ANTES DE INICIAR A PARTIDA OS BARALHOS SÃO EMBARALHADOS
+        //
+        embaralharBaralho(jogador1.getBaralhoPartida());
+        embaralharBaralho(jogador2.getBaralhoPartida());
+
+        turnoAtual = new Turno(jogador1, this);
+
+    }
+
+    public void jogar(Acao pAcaoSelecionada, Carta pCartaAcao, TipoAlvo pAlvo, Carta pCartaAlvo) {
+
+    }
+
+    public Acao getAcaoSelecionada() {
+        return acaoSelecionada;
+    }
+
+    public void setAcaoSelecionada(Acao acaoSelecionada) {
+        this.acaoSelecionada = acaoSelecionada;
+    }
+
+    public TipoAlvo getTipoAlvo() {
+        return tipoAlvo;
+    }
+
+    public void setTipoAlvo(TipoAlvo tipoAlvo) {
+        this.tipoAlvo = tipoAlvo;
+    }
+
+    public Carta getCartaAlvo() {
+        return cartaAlvo;
+    }
+
+    public void setCartaAlvo(Carta cartaAlvo) {
+        this.cartaAlvo = cartaAlvo;
+    }
+
+    public Turno getTurnoAtual() {
+        return turnoAtual;
+    }
+
+    public void setTurnoAtual(Turno turnoAtual) {
+        this.turnoAtual = turnoAtual;
+    }
+
+    public List<Turno> getTurnosRealizados() {
+        return turnosRealizados;
+    }
+
+    public void setTurnosRealizados(List<Turno> turnosRealizados) {
+        this.turnosRealizados = turnosRealizados;
     }
 
 }
