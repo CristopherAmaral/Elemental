@@ -8,6 +8,7 @@ package com.super_bits.GAME_SUPERBITS_ELEMENTAL.elemental.model.jogo;
 import com.super_bits.GAME_SUPERBITS_ELEMENTAL.elemental.model.carta.Item;
 import com.super_bits.GAME_SUPERBITS_ELEMENTAL.elemental.model.carta.Monstro;
 import com.super_bits.GAME_SUPERBITS_ELEMENTAL.elemental.model.jogador.Jogador;
+import com.super_bits.GAME_SUPERBITS_ELEMENTAL.elemental.model.tipoClasse.FabTipoClasse;
 import com.super_bits.GAME_SUPERBITS_ELEMENTAL.elemental.model.usuario.Usuario;
 import com.super_bits.modulosSB.SBCore.modulos.fabrica.ItfFabrica;
 
@@ -53,6 +54,12 @@ public enum FabDadosTest implements ItfFabrica {
             case CARTA_MONSTRO1:
 
                 Monstro monstro1 = new Monstro();
+
+                monstro1.setNome("");
+                monstro1.setTipoClasse(FabTipoClasse.);
+                monstro1.setClasse(classe);
+                monstro1.setAtk(1);
+                monstro1.setDef(1);
 
                 return monstro1;
 

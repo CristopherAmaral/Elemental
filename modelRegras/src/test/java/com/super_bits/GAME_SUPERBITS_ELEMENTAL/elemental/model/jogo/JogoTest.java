@@ -67,9 +67,13 @@ public class JogoTest {
 //
 // INICIO DO TURNO DO PRIMEIRO JOGADOR
 //
+            Turno turnoAtual = new Turno(jogador1, jogo);
+
+            jogo.setTurnoAtual(turnoAtual);
+
             // JOGADOR ESCOLHE UMA CARTA PARA REALIZAR ACAO
             //
-            jogo.getJogadorAtual().setCartaAcao(jogador1.getMao().get(0));
+            jogo.getTurnoAtual().getJogador().setCartaAcao(jogador1.getMao().get(0));
 
             // JOGADOR COLOCAR A CARTA NO CAMPO NA POSICAO INFORMADA
             //

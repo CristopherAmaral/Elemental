@@ -3,18 +3,16 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.super_bits.GAME_SUPERBITS_ELEMENTAL.elemental.model.tipoClasse;
+package com.super_bits.GAME_SUPERBITS_ELEMENTAL.elemental.model.tipoElemento;
 
 /**
  *
  * @author cristopher
  */
-public class TipoClasse {
+public class TipoElemento {
 
     private int id;
-
     private String nome;
-
     private String descricao;
 
     public int getId() {

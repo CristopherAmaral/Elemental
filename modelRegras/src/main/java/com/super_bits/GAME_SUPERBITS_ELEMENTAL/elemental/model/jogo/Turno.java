@@ -7,7 +7,6 @@ package com.super_bits.GAME_SUPERBITS_ELEMENTAL.elemental.model.jogo;
 
 import com.super_bits.GAME_SUPERBITS_ELEMENTAL.elemental.model.jogador.Jogador;
 import java.util.List;
-import static org.hamcrest.CoreMatchers.any;
 
 /**
  *

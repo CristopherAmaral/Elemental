@@ -19,4 +19,48 @@ public class Jogada {
 
     private Carta cartaAdversario;
 
+    private Acao acaoSelecionada;
+
+    private TipoAlvo tipoAlvo;
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public Carta getCartaJogador() {
+        return cartaJogador;
+    }
+
+    public void setCartaJogador(Carta cartaJogador) {
+        this.cartaJogador = cartaJogador;
+    }
+
+    public Carta getCartaAdversario() {
+        return cartaAdversario;
+    }
+
+    public void setCartaAdversario(Carta cartaAdversario) {
+        this.cartaAdversario = cartaAdversario;
+    }
+
+    public Acao getAcaoSelecionada() {
+        return acaoSelecionada;
+    }
+
+    public void setAcaoSelecionada(Acao acaoSelecionada) {
+        this.acaoSelecionada = acaoSelecionada;
+    }
+
+    public TipoAlvo getTipoAlvo() {
+        return tipoAlvo;
+    }
+
+    public void setTipoAlvo(TipoAlvo tipoAlvo) {
+        this.tipoAlvo = tipoAlvo;
+    }
+
 }

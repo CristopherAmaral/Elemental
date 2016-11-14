@@ -31,12 +31,6 @@ public class Jogo {
 
     private Turno turnoAtual;
 
-    private Acao acaoSelecionada;
-
-    private TipoAlvo tipoAlvo;
-
-    private Carta cartaAlvo;
-
     private List<Turno> turnosRealizados;
 
     public int getId() {
@@ -94,30 +88,6 @@ public class Jogo {
 
     public void jogar(Acao pAcaoSelecionada, Carta pCartaAcao, TipoAlvo pAlvo, Carta pCartaAlvo) {
 
-    }
-
-    public Acao getAcaoSelecionada() {
-        return acaoSelecionada;
-    }
-
-    public void setAcaoSelecionada(Acao acaoSelecionada) {
-        this.acaoSelecionada = acaoSelecionada;
-    }
-
-    public TipoAlvo getTipoAlvo() {
-        return tipoAlvo;
-    }
-
-    public void setTipoAlvo(TipoAlvo tipoAlvo) {
-        this.tipoAlvo = tipoAlvo;
-    }
-
-    public Carta getCartaAlvo() {
-        return cartaAlvo;
-    }
-
-    public void setCartaAlvo(Carta cartaAlvo) {
-        this.cartaAlvo = cartaAlvo;
     }
 
     public Turno getTurnoAtual() {
