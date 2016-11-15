@@ -5,26 +5,17 @@
  */
 package com.super_bits.GAME_SUPERBITS_ELEMENTAL.elemental.model.carta;
 
-import com.super_bits.GAME_SUPERBITS_ELEMENTAL.elemental.model.efeito.Efeito;
-import java.util.List;
-
 /**
  *
  * @author cristopher
  */
-public class Carta {
+public class Posicao {
 
     private int id;
 
     private String nome;
 
     private String descricao;
-
-    private TipoCarta tipoCarta;
-
-    private List<Efeito> efeitos;
-
-    private Posicao posicao;
 
     public int getId() {
         return id;
@@ -48,30 +39,6 @@ public class Carta {
 
     public void setDescricao(String descricao) {
         this.descricao = descricao;
-    }
-
-    public TipoCarta getTipoCarta() {
-        return tipoCarta;
-    }
-
-    public void setTipoCarta(TipoCarta tipoCarta) {
-        this.tipoCarta = tipoCarta;
-    }
-
-    public List<Efeito> getEfeitos() {
-        return efeitos;
-    }
-
-    public void setEfeitos(List<Efeito> efeitos) {
-        this.efeitos = efeitos;
-    }
-
-    public Posicao getPosicao() {
-        return posicao;
-    }
-
-    public void setPosicao(Posicao posicao) {
-        this.posicao = posicao;
     }
 
 }

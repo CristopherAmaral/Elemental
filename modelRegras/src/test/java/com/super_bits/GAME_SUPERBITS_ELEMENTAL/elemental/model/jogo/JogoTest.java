@@ -5,7 +5,7 @@
  */
 package com.super_bits.GAME_SUPERBITS_ELEMENTAL.elemental.model.jogo;
 
-import com.super_bits.GAME_SUPERBITS_ELEMENTAL.elemental.model.carta.Posicao;
+import com.super_bits.GAME_SUPERBITS_ELEMENTAL.elemental.model.carta.FabPosicao;
 import com.super_bits.GAME_SUPERBITS_ELEMENTAL.elemental.model.jogador.Jogador;
 import com.super_bits.GAME_SUPERBITS_ELEMENTAL.elemental.model.usuario.Usuario;
 import com.super_bits.modulosSB.SBCore.ConfigGeral.SBCore;
@@ -67,23 +67,20 @@ public class JogoTest {
 //
 // INICIO DO TURNO DO PRIMEIRO JOGADOR
 //
-            Turno turnoAtual = new Turno(jogador1, jogo);
-
-            jogo.setTurnoAtual(turnoAtual);
+            jogo.iniciarTurno();
 
             // JOGADOR ESCOLHE UMA CARTA PARA REALIZAR ACAO
             //
             jogo.getTurnoAtual().getJogador().setCartaAcao(jogador1.getMao().get(0));
 
+            jogo.getTurnoAtual().getJogador().getCartaAcao().setPosicao(FabPosicao.DEFESA_OCULTA.getRegistro());
+
             // JOGADOR COLOCAR A CARTA NO CAMPO NA POSICAO INFORMADA
             //
-            jogador1.colocarCartaNoCampo(jogo.getCartaAcao(), jogo.getCartaAcao().getPosicao());
+            jogo.getTurnoAtual().getJogadaAtual().colocarCartaNoCampo(jogo.getTurnoAtual().getJogador().getCartaAcao(), jogo.getTurnoAtual().getJogador().getCartaAcao().getPosicao());
 
             // JOGADOR ESCOLHE A POSICAO DA CARTA
             //
-            Posicao posicaoSelecionada = new Posicao();
-            posicaoSelecionada.setNome("defesa");
-
             jogo.getJogadorAtual().getCartaAcao().setPosicao(posicaoSelecionada);
 
             // JOGADOR ESCOLHE UMA ACAO

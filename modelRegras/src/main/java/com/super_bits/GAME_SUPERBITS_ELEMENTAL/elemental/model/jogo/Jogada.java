@@ -6,6 +6,7 @@
 package com.super_bits.GAME_SUPERBITS_ELEMENTAL.elemental.model.jogo;
 
 import com.super_bits.GAME_SUPERBITS_ELEMENTAL.elemental.model.carta.Carta;
+import com.super_bits.GAME_SUPERBITS_ELEMENTAL.elemental.model.carta.Posicao;
 
 /**
  *
@@ -61,6 +62,42 @@ public class Jogada {
 
     public void setTipoAlvo(TipoAlvo tipoAlvo) {
         this.tipoAlvo = tipoAlvo;
+    }
+
+    public void colocarCartaNoCampo(Carta pCarta, Posicao pPosicao) {
+
+    }
+
+    public void atacarMonstroOponente(Carta pSeuMonstro, Carta pMonstroOponente) {
+
+    }
+
+    public void usaItemEmOponente(Carta pItem) {
+
+    }
+
+    public void usarItemEmVoce(Carta pItem) {
+
+    }
+
+    public void atacarOponente(Carta pSeuMonstro) {
+
+    }
+
+    public void defenderOculto(Carta pCarta) {
+
+    }
+
+    public void defender(Carta pCarta) {
+
+    }
+
+    public void passarVez() {
+
+    }
+
+    public void desistir() {
+
     }
 
 }

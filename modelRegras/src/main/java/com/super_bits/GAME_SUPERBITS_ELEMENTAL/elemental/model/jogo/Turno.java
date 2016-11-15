@@ -20,7 +20,11 @@ public class Turno {
 
     private Jogador jogador;
 
-    private List<Jogada> jogada;
+    private Jogada jogadaAtual;
+
+    private List<Jogada> jogadas;
+
+    private boolean colocouMonstroNoCampo;
 
     public Turno(Jogador pJogador, Jogo pJogo) {
 
@@ -34,9 +38,10 @@ public class Turno {
         //
         sacarCartaInicioTurno();
 
-    }
+        jogadaAtual = new Jogada();
+        jogadas.add(jogadaAtual);
 
-    private boolean colocouMonstroNoCampo;
+    }
 
     public boolean getTemMaisQueCincoCartasMao() {
 
@@ -75,12 +80,28 @@ public class Turno {
         this.jogador = jogador;
     }
 
-    public List<Jogada> getJogada() {
-        return jogada;
+    public List<Jogada> getJogadas() {
+        return jogadas;
     }
 
-    public void setJogada(List<Jogada> jogada) {
-        this.jogada = jogada;
+    public void setJogadas(List<Jogada> jogadas) {
+        this.jogadas = jogadas;
+    }
+
+    public Jogada getJogadaAtual() {
+        return jogadaAtual;
+    }
+
+    public void setJogadaAtual(Jogada jogadaAtual) {
+        this.jogadaAtual = jogadaAtual;
+    }
+
+    public boolean isColocouMonstroNoCampo() {
+        return colocouMonstroNoCampo;
+    }
+
+    public void setColocouMonstroNoCampo(boolean colocouMonstroNoCampo) {
+        this.colocouMonstroNoCampo = colocouMonstroNoCampo;
     }
 
     private void sacarCartaInicioTurno() {

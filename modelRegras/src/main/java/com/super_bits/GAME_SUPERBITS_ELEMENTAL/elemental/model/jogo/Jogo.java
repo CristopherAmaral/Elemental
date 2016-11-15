@@ -106,4 +106,18 @@ public class Jogo {
         this.turnosRealizados = turnosRealizados;
     }
 
+    public void iniciarTurno() {
+
+        if (jogador1.getQtdTurno() == jogador2.getQtdTurno()) {
+
+            turnoAtual = new Turno(jogador1, this);
+
+        } else if (jogador1.getQtdTurno() > jogador2.getQtdTurno()) {
+
+            turnoAtual = new Turno(jogador2, this);
+
+        }
+
+    }
+
 }

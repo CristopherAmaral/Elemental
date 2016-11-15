@@ -11,7 +11,7 @@ import com.super_bits.modulosSB.SBCore.modulos.fabrica.ItfFabrica;
  *
  * @author cristopher
  */
-public enum FabAcao implements ItfFabrica {
+public enum FabTipoAcao implements ItfFabrica {
 
     ATACAR,
     DEFENDER,
