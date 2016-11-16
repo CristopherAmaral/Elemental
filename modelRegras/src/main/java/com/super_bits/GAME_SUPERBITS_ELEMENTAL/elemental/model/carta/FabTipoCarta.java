@@ -19,7 +19,7 @@ public enum FabTipoCarta implements ItfFabrica {
     ITEM;
 
     @Override
-    public Object getRegistro() {
+    public TipoCarta getRegistro() {
         try {
             TipoCarta tipoAtual = new TipoCarta();
 

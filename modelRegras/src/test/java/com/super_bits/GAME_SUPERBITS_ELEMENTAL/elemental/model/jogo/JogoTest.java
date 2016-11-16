@@ -71,7 +71,7 @@ public class JogoTest {
 
             // JOGADOR ESCOLHE UMA CARTA PARA REALIZAR ACAO
             //
-            jogo.getTurnoAtual().getJogador().setCartaAcao(jogador1.getMao().get(0));
+            jogo.getTurnoAtual().getJogadaAtual().setCartaAcao(jogador1.getMao().get(0));
 
             jogo.getTurnoAtual().getJogador().getCartaAcao().setPosicao(FabPosicao.DEFESA_OCULTA.getRegistro());
 

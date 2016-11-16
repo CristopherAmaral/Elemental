@@ -7,6 +7,7 @@ package com.super_bits.GAME_SUPERBITS_ELEMENTAL.elemental.model.carta;
 
 import com.super_bits.GAME_SUPERBITS_ELEMENTAL.elemental.model.classe.Classe;
 import com.super_bits.GAME_SUPERBITS_ELEMENTAL.elemental.model.tipoClasse.TipoClasse;
+import com.super_bits.GAME_SUPERBITS_ELEMENTAL.elemental.model.tipoElemento.TipoElemento;
 
 /**
  *
@@ -21,6 +22,8 @@ public class Monstro extends Carta {
     private Classe classe;
 
     private TipoClasse tipoClasse;
+
+    private TipoElemento tipoElemento;
 
     public int getAtk() {
         return atk;
@@ -52,6 +55,14 @@ public class Monstro extends Carta {
 
     public void setTipoClasse(TipoClasse tipoClasse) {
         this.tipoClasse = tipoClasse;
+    }
+
+    public TipoElemento getTipoElemento() {
+        return tipoElemento;
+    }
+
+    public void setTipoElemento(TipoElemento tipoElemento) {
+        this.tipoElemento = tipoElemento;
     }
 
 }

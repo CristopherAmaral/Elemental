@@ -13,20 +13,36 @@ import com.super_bits.modulosSB.SBCore.modulos.fabrica.ItfFabrica;
  */
 public enum FabTipoClasse implements ItfFabrica {
 
-    GUERREIRO,
-    MAGO,
-    BESTA,
-    DRAGAO,
-    TITA,
-    MAQUINA,
-    FANTASMA,
-    ANJO,
-    DEMONIO,
-    SEMI_DEUS,
-    DEUS;
+    GUERREIRO,//// 08
+    MAGO,///////// 05
+    BESTA,//////// 10
+    DRAGAO,/////// 04
+    TITA,///////// 03
+    MAQUINA,////// 07
+    FANTASMA,///// 09
+    ANJO,///////// 06.1
+    DEMONIO,////// 06.2
+    SEMI_DEUS,//// 02
+    DEUS;///////// 01
 
+    // ORDEM DE PODER POR CLASSE
+    //
+    //
+    // 01 PODER ATK E DEF ENTRE 80 - 100                 (DEUS)
+    // 02 PODER ATK E DEF ENTRE 60 - 80                  (SEMI-DEUS)
+    // 03 PODER ATK ENTRE 60 - 70 / DEF ENTRE 70 - 90    (TITÃ)
+    // 04 PODER ATK E DEF ENTRE 55 - 75                  (DRAGAO)
+    // 05 PODER ATK E DEF ENTRE 45 - 75                  (MAGO)
+    // 06.1 PODER ATK ENTRE 10 - 20 / DEF ENTRE 45 - 65  (ANJO)
+    // 06.2 PODER ATK ENTRE 45 - 65 / DEF ENTRE 10 - 20  (DEMONIO)
+    // 07 PODER ATK ENTRE 25 - 35 / DEF ENTRE 40 - 55    (MAQUINA)
+    // 08 PODER ATK E DEF ENTRE 25 - 50                  (GUERREIRO)
+    // 09 PODER ATK ENTRE 05 - 15 / DEF ENTRE 25 - 50    (FANTASMA)
+    // 10 PODER ATK ENTRE 10 - 30 / DEF ENTRE 15 - 35    (BESTA)
+    //
+    //
     @Override
-    public Object getRegistro() {
+    public TipoClasse getRegistro() {
 
         TipoClasse tipoClasseAtual = new TipoClasse();
 

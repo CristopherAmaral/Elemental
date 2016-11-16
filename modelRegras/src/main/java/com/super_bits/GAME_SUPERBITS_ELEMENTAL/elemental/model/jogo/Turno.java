@@ -129,4 +129,10 @@ public class Turno {
 
     }
 
+    public void iniciarJogada() {
+
+        jogadaAtual = new Jogada();
+
+    }
+
 }

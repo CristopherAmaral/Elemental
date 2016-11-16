@@ -111,10 +111,12 @@ public class Jogo {
         if (jogador1.getQtdTurno() == jogador2.getQtdTurno()) {
 
             turnoAtual = new Turno(jogador1, this);
+            turnoAtual.iniciarJogada();
 
         } else if (jogador1.getQtdTurno() > jogador2.getQtdTurno()) {
 
             turnoAtual = new Turno(jogador2, this);
+            turnoAtual.iniciarJogada();
 
         }
 

@@ -20,7 +20,7 @@ public enum FabTipoElemento implements ItfFabrica {
     NEUTRO;
 
     @Override
-    public Object getRegistro() {
+    public TipoElemento getRegistro() {
 
         TipoElemento tipoElementoAtual = new TipoElemento();
 
